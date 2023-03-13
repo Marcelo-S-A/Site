@@ -1,0 +1,299 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: arial, helvetica, sans-serif;
+    font-size: 12px;
+    background-color: #b3bcc4;
+}
+
+.simple_header {
+    padding: 12px 10px;
+    text-align: center;
+    background: #5c6c7c;
+    color: #b3bcc4;
+    font-size: 18px;
+    float: none;
+
+}
+
+.simple_footer {
+    padding: 12px 10px;
+    text-align: left;
+    background: #39424a;
+    color: rgb #39424a;
+    font-size: 18px;
+    float: none;
+
+}
+
+.icon_image {
+    position: relative;
+    float: left padding 0;
+}
+
+
+.navbar {
+    list-style: none;
+    border: 0px solid #b4bdc5;
+    float: left;
+}
+
+.navbar li {
+    position: relative;
+    float: left;
+    border-right: 0px solid #39424a;
+}
+
+.navbar li a {
+    color: #39424a;
+    text-decoration: none;
+    padding: 0px 10px;
+    display: block;
+}
+
+.navbar li a:hover {
+    background: #5c6c7c;
+    color: #5c6c7c;
+    box-shadow: 0 3px 10px 0 #39424a;
+    -webkit-box-shadow: 0 3px 10px 0 #b4bdc5;
+    text-shadow: 0px 0px 5px #b4bdc5;
+}
+
+.navbar li ul {
+    position: absolute;
+    top: 25px;
+    left: 0;
+    background-color: #b4bdc5;
+    display: none;
+
+}
+
+.navbar li:hover ul,
+.navbar li.over ul {
+    display: block;
+}
+
+.navbar li ul li {
+    border: 0px solid #b3bcc4;
+    display: block;
+    width: 150px;
+}
+
+.cont_home_principal {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    color: #39424a
+}
+
+.cont_home_principal h1 {
+    color: #39424a
+}
+
+.cont_home_principal table {
+    width: 100%;
+    margin-bottom: .5em;
+    table-layout: fixed;
+    text-align: justify;
+
+}
+
+.cont_home_principal table tr td {
+    border: 1px solid;
+}
+
+/* slider carousel 1 */
+
+.slider {
+    display: block;
+    height: 250px;
+    width: 500px;
+    margin: auto;
+    margin-top: 20px;
+    position: relative;
+
+}
+
+.slide li {
+    list-style: none;
+    position: absolute;
+
+}
+
+.lider img {
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    vertical-align: top;
+
+}
+
+.slider input {
+    display: none;
+}
+
+.slider label {
+    background-color: #39424a;
+    bottom: 10px;
+    cursor: pointer;
+    display: block;
+    height: 10px;
+    position: absolute;
+    width: 10px;
+    z-index: 10;
+}
+
+.slider li:nth-child(1) label {
+    left: 10px;
+}
+
+.slider li:nth-child(2) label {
+    left: 40px;
+}
+
+.slider li:nth-child(3) label {
+    left: 70px;
+}
+
+.slider img {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.slider li imput:checked~img {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+
+
+
+.container_form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #b3bcc4;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+h4 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+form input,
+form textarea {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+form textarea {
+    height: 150px;
+    resize: none;
+}
+
+form button {
+    display: block;
+    background-color: #5c6c7c;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+
+
+
+
+.carousel-container {
+    width: 800px;
+    overflow: hidden;
+    display: flex;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #5680da;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.album {
+    width: 800px;
+    overflow: hidden;
+    display: flex;
+
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #a3b8f1;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+}
+
+.item {
+    flex: 0 0 auto;
+    width: 100%;
+    transition: transform 0.5s ease;
+}
+
+.carousel-button-prev,
+.carousel-button-next {
+    position: absolute;
+    margin: 0px;
+    transform: translateY(-50%);
+    z-index: 1;
+
+}
+
+.carousel-button-prev {
+    left: 50px;
+}
+
+.carousel-button-next {
+    right: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    /* Proporção de aspecto 16:9 */
+    height: 0;
+    overflow: hidden;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
